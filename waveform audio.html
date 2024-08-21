@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wavesurfer.js Example</title>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+</head>
+<body>
+    <div id="waveform"></div>
+    <script>
+        var wavesurfer = WaveSurfer.create({
+            container: '#waveform',
+            waveColor: 'violet',
+            progressColor: 'purple'
+        });
+
+        // Replace the URL with the path to your audio file
+        wavesurfer.load('https://drive.google.com/open?id=1h3VhDu8ZJtBYZVOvd05inC2uSAlyp1jp&usp=drive_fs');
+    </script>
+</body>
+</html>
